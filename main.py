@@ -1,10 +1,10 @@
+import asyncio
 import logging
 
-import asyncio
-
-from confiG import TOKEN
 from aiogram import Dispatcher, Bot
+
 from app.handlers import router
+from confiG import TOKEN
 
 
 async def main():

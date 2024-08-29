@@ -1,11 +1,12 @@
-from aiogram.fsm.context import FSMContext
-from aiogram.types import Message
-from aiogram.filters import CommandStart
+import sqlite3
+
 from aiogram import F, Router
+from aiogram.filters import CommandStart
+from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
+from aiogram.types import Message
 
 import app.kb as kb
-import sqlite3
 from database.models import DATABASE_PATH
 
 router = Router()
